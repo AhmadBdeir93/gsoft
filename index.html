@@ -122,27 +122,40 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
-  <!-- Photo grid (modal) -->
+  <div class="w3-content w3-section" style="max-width: 500px">
+    <img class="mySlides w3-animate-fading" src="https://i.imgur.com/PVKwjNo.png" style="width: 100%; height: 250px;" onclick="onClick(this)">
+    <img class="mySlides w3-animate-fading" src="https://i.imgur.com/jE2Nm0U.png" style="width: 100%; height: 250px;" onclick="onClick(this)" >
+    <img class="mySlides w3-animate-fading" src="https://i.imgur.com/5HPLUs8.png" style="width: 100%; height: 250px;" onclick="onClick(this)">
+    <img class="mySlides w3-animate-fading" src="https://i.imgur.com/ZvqOGX8.png" style="width: 100%; height: 250px;" onclick="onClick(this)">
+    <img class="mySlides w3-animate-fading" src="https://i.imgur.com/Lb0C8b3.png" style="width: 100%; height: 250px;" onclick="onClick(this)">
+</div>
+
+
+  <!-- Photo grid (modal) 
   <div class="w3-row-padding">
+    
     <div class="w3-half">
       <img src="https://i.imgur.com/PVKwjNo.png" style="width:100%" onclick="onClick(this)" alt="GSCHEQUE">
       <img src="https://i.imgur.com/5HPLUs8.png" style="width:100%" onclick="onClick(this)" alt="GSOFT">
+      <img src="https://i.imgur.com/ZvqOGX8.png" style="width:100%; " onclick="onClick(this)" alt="PHARMACIE">
+
     </div>
 
     <div class="w3-half">
       <img src="https://i.imgur.com/Lb0C8b3.png" style="width:100%" onclick="onClick(this)" alt="GSCHEQUE">
-      <img src="https://i.imgur.com/lSy1QTS.png" style="width:100%" onclick="onClick(this)" alt="GSPURCHASE">
+      <img src="https://i.imgur.com/jE2Nm0U.png" style="width:100%" onclick="onClick(this)" alt="GSPURCHASE">
     </div>
+    
   </div>
+-->
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
   </div>
+</div>
 
   <!-- Services -->
   
@@ -177,7 +190,7 @@ body {font-size:16px;}
     </div>
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="https://i.imgur.com/lSy1QTS.png" alt="GSPURCHASE" style="width:100%">
+        <img src="https://i.imgur.com/jE2Nm0U.png" alt="GSPURCHASE" style="width:100%">
         <div class="w3-container">
           <h3>GSPURCHASE</h3>
           <p class="w3-opacity">Solution gestion des commandes</p>
@@ -187,11 +200,21 @@ body {font-size:16px;}
     </div>
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="https://i.imgur.com/5HPLUs8.png" alt="Mike" style="width:100%">
+        <img src="https://i.imgur.com/5HPLUs8.png" alt="GSOFT" style="width:100%">
         <div class="w3-container">
-          <h3>Gsoft</h3>
+          <h3>GSOFT</h3>
           <p class="w3-opacity">Solution gestion commerciale ERP </p>
           <a href="https://gspurchase.com/downloads/GsoftSetup.exe" >Download</a>       
+         </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/ZvqOGX8.png" alt="PHARMACI BOT" style="width:100%">
+        <div class="w3-container">
+          <h3>PHARMACIE BOT</h3>
+          <p class="w3-opacity">Pharmacie de garde à Abidjan sur Telegram</p>
+          <a href="https://t.me/GsoftReporting_bot" target="_blank">Go to Telegram</a>       
          </div>
       </div>
     </div>
@@ -208,6 +231,9 @@ body {font-size:16px;}
     
     <h2>GSoft Gestion Commerciale</h2>
     <p>GSoft Gestion Commerciale est un logiciel complet de suivi de stock, de facturation et de gestion des comptes clients, fournisseurs et de la caisse. Il s'agit d'un ERP (Enterprise Resource Planning) simplifié qui offre une interface conviviale et des fonctionnalités puissantes pour aider votre entreprise à gérer efficacement ses opérations commerciales. Avec GSoft Gestion Commerciale, vous disposez d'un outil centralisé pour optimiser vos processus et maximiser vos performances commerciales.</p>
+    
+    <h2>GSoft Pharmacie</h2>
+    <p>GSoft Pharmacie est un bot Telegram pour localiser les pharmacies de garde à Abidjan, fournissant un accès rapide aux informations sur les pharmacies ouvertes en dehors des heures habituelles.</p>
 
   </div>
 
@@ -256,6 +282,23 @@ body {font-size:16px;}
 
 <!-- W3.CSS Container -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Ahmad Bdeir <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+  }
+  </script>
 
 <script>
 
